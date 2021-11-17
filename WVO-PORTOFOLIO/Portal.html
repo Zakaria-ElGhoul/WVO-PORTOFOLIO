@@ -56,44 +56,77 @@
 				<div class="inner">
 
 					<h3 class="major">PORTAL</h3>
-					<p>Ik heb een portal gemaakt in unity met een render texture en wat wiskunde toegepast om het te
-						laten werken. Hieronder staat de code van de shader:</p>
-					<h3 class="major">Code:</h3>
-					<pre>
-						<code>
-										</code>
-									</pre>
-					<h3 class="major">Foto's</h3>
-
+					<p>We hadden een game gemaakt voor een game jam op school. We kregen een thema en we moesten 2
+						engelse werkwoorden toepassen in de game. De werkwoorden werden random gegenereerd. </p>
+					<h4 class="major">Thema</h4>
+					<p>De thema was One Button, we moesten een game maken met een knop. We hadden als werkwoorden: tear,
+						encounter en cheat gekregen. Als knop hadden we de scrollwheel gekozen, omdat we de scrollwheel
+						mochten gebruiken en je kan de scrollwheel indrukken. </p>
+					<h4 class="major">Gameplay</h4>
+					<p>Voor de gameplay hadden we als idee een 2d platformer waarmee je je zwaard kan ronddraaien en kan
+						springen waar de zwaard naartoe richt. De eerste dag waren we gelijk begonnen aan de core
+						gameplay en hadden we snel een werkend prototype. </p>
+					<h4 class="major"></h4>
 					<div class="box alt">
 						<div class="row gtr-uniform">
-							<div class="col-4">
+							<div class="col-12">
 								<span class="image fit">
-									<img src="images/playerteleport.png" alt="">
+									<img src="images/ezgif.com-gif-maker.gif" alt="">
 								</span>
 							</div>
-							<div class="col-4">
+							<div class="col-6">
 								<span class="image fit">
-									<img src="images/rendertexture.png" alt="">
+									<img src="images/IMG_3402.jpg" alt="">
+								</span>
+							</div>
+							<div class="col-6">
+								<span class="image fit">
+									<img src="images/IMG_3403.jpg" alt="">
 								</span>
 							</div>
 						</div>
 					</div>
+					<h4 class="major">Scrolling mechanic</h4>
+					<p>Eerst hadden we ons gefocussed op de input van de player zodat we gelijk al wisten wat we ermee
+						gingen doen. We hadden dus de zwaard om de player laten draaien door middel van scrollen</p>
+					<p>We hadden uiteindelijk de scrollwheel input gelocked tot een hoeveelheid graden met code zodat de
+						player niet naar beneden kan springen.</p>
+					<p> De code kon wel wat netter door Mathf.Clamp() te gebruiken.</p>
+					<pre>
+                        <code>if (Input.mouseScrollDelta.y > 0 && scroll > -110)
+    scroll -= scrollAmount * Time.deltaTime;
+if (Input.mouseScrollDelta.y < 0 && scroll < 110)
+    scroll += scrollAmount * Time.deltaTime;</code>
+                    </pre>
+					<h4 class="major">Jump mechanic</h4>
+					<p>Voor de jump mechanic hadden wij als de player op de grond is dat hij dan kan springen. Dat is
+						ons gelukt door middel van de scrollwheel drukken als input te gebruiken en een overlap circle
+						te gebruiken. Hieronder kan je de jump code zien:</p>
+					<pre>
+<code>if (isGrounded && Input.GetMouseButton(2))
+    {
+        rb.velocity = sword.up * jumpStrenght;
+    }    
+</code>
+                    </pre>
+					<h3 class="major">GitHub repository</h3>
+					<a href="https://github.com/Zakaria-ElGhoul/Discord-Bot" class="button primary">Go to github</a>
 				</div>
 			</div>
+	</div>
 
-		</section>
+	</section>
 
-		<!-- Footer -->
-		<section id="footer">
-			<div class="inner">
+	<!-- Footer -->
+	<section id="footer">
+		<div class="inner">
 
-				<ul class="copyright">
-					<li>&copy; 1uckY Inc. All rights reserved.</li>
-					<li>Zakaria El Ghoul Aadi</li>
-				</ul>
-			</div>
-		</section>
+			<ul class="copyright">
+				<li>&copy; 1uckY Inc. All rights reserved.</li>
+				<li>Zakaria El Ghoul Aadi</li>
+			</ul>
+		</div>
+	</section>
 
 	</div>
 

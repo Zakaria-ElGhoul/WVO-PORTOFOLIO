@@ -44,35 +44,47 @@
         </nav>
 
         <!-- Wrapper -->
-        <section id="wrapper">
-            <header>
-                <div class="inner">
-                    <h2>VR Painting</h2>
-                </div>
-            </header>
-
-            <!-- Content -->
-            <div class="wrapper">
-                <div class="inner">
-
-                    <h2 class="major">VR Painting</h2>
-                </div>
-            </div>
-
-        </section>
-
-        <!-- Footer -->
-        <section id="footer">
+        <div class="wrapper">
             <div class="inner">
-
-                <ul class="copyright">
-                    <li>&copy; 1uckY Inc. All rights reserved.</li>
-                    <li>Zakaria El Ghoul Aadi</li>
-                </ul>
+                <h2 class="major">VR painting</h2>
+                <p>Ik had een VR painting applicatie met custom handtracking gemaakt in Unreal Engine 4.25. Ik vond dit een zeer leerzame project en heb veel geleerd.</p>
+                <h4 class="major">idee</h4>
+                <p>Je kan je handen gebruiken om een pen oppakken en tekenen op een canvas.</p>
+                <h4 class="major"></h4>
+                <div class="box alt">
+                    <div class="row gtr-uniform">
+                        <div class="col-12">
+                            <span class="image fit">
+                                <img src="images/Picture2.gif" alt="">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <h4 class="major">Custom handtracking</h4>
+                <p><span class="image right"><img src="images/oculus-quest-2.jpg" alt="" /></span>Ik had me eerst gefocussed op hoe VR handtracking werkt en een manier vinden hoe ik dat moest namaken. Ik heb uiteindelijk een video gevolgd die alles stap voor stap uitlegde. Er zitten camera's aan de voorkant van de VR bril.<br>Hoe werkt handtracking? Handtracking werkt via de inside-out camera's van de Oculus Quest 2 en Quest. Je headset detecteert de positie en oriëntatie van je handen en de configuratie van je vingers. Zodra dit is gedetecteerd, worden computervisie-algoritmes gebruikt om de beweging en oriëntatie van je handen te volgen.</p>
+                <h4 class="major">Painting</h4>
+                <p><span class="image right"><img src="images/rt.png" alt="" /></span>Ik had een shader gemaakt waarmee je als je op een locatie de pen zet dat hij daar tekent. Dat heb ik bereikt met render targets. <br> Render targets zijn textures die je in runtime kan aanpassen. Dankzij render textures kan ik op de canvas tekenen doormiddel van de locatie te vinden via een line trace. Als de line trace de canvas raakt dan pakt hij de UV coordinaten en tekent hij daarop. <br> <br> <br> <br></p>
+                <h3 class="major">GitHub repository</h3>
+                <a href="https://github.com/Zakaria-ElGhoul/Discord-Bot" class="button primary">Go to github</a>
+                <br>
+                <br>
+                <br>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </div>
+    <!-- Footer -->
+    <section id="footer">
+        <div class="inner">
+
+            <ul class="copyright">
+                <li>&copy; 1uckY Inc. All rights reserved.</li>
+                <li>Zakaria El Ghoul Aadi</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
