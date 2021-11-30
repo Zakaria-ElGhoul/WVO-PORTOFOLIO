@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
     <title>Zakaria El Ghoul Aadi --Portal</title>
     <meta charset="utf-8" />
@@ -14,7 +13,6 @@
 <body class="is-preload">
     <!-- particles.js container -->
     <div id="particles-js"></div>
-
     <!-- scripts -->
     <script src="particles.js"></script>
     <script src="app.js"></script>
@@ -50,21 +48,30 @@
                     <h2>Shader Experiment</h2>
                 </div>
             </header>
-
             <!-- Content -->
             <div class="wrapper">
                 <div class="inner">
-
                     <h2 class="major">Shader Experiment</h2>
+                    <p>Ik heb een shader geschreven waarmee de player dunner wordt en er een game van gemaakt. Het was een opdracht voor school. Ik heb veel geleerd over hoe je shaders moet schijven in HLSL.</p>
+                    <pre>
+                        <code>Properties{
+    _MainTex("Texture", 2D) = "white" {}
+    _Color("Color", Color) = (0,0,0,0)
+    _Amount("Extrusion Amount", Range(-1,1)) = 0.5
+    _BumpMap("Bumpmap", 2D) = "bump" {}
+    _RimColor("Rim Color", Color) = (0.26,0.19,0.16,0.0)
+    _RimPower("Rim Power", Range(0.5,8.0)) = 3.0
+}</code>
+                    </pre>
+                    <h3 class="major">GitHub repository</h3>
+                    <a href="https://github.com/Zakaria-ElGhoul/Shader_Experiment" class="button primary">Go to github</a>
                 </div>
             </div>
-
         </section>
 
         <!-- Footer -->
         <section id="footer">
             <div class="inner">
-
                 <ul class="copyright">
                     <li>&copy; 1uckY Inc. All rights reserved.</li>
                     <li>Zakaria El Ghoul Aadi</li>

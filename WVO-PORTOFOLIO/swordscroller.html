@@ -86,8 +86,10 @@
                         </div>
                     </div>
                     <h4 class="major">Scrolling mechanic</h4>
-                    <p>Eerst hadden we ons gefocussed op de input van de player zodat we gelijk al wisten wat we ermee gingen doen. We hadden dus de zwaard om de player laten draaien door middel van scrollen</p>
-                    <p>We hadden uiteindelijk de scrollwheel input gelocked tot een hoeveelheid graden met code zodat de player niet naar beneden kan springen.</p>
+                    <p>Eerst hadden we ons gefocussed op de input van de player zodat we gelijk al wisten wat we ermee
+                        gingen doen. We hadden dus de zwaard om de player laten draaien door middel van scrollen</p>
+                    <p>We hadden uiteindelijk de scrollwheel input gelocked tot een hoeveelheid graden met code zodat de
+                        player niet naar beneden kan springen.</p>
                     <p> De code kon wel wat netter door Mathf.Clamp() te gebruiken.</p>
                     <pre>
                         <code>if (Input.mouseScrollDelta.y > 0 && scroll > -110)
@@ -96,7 +98,9 @@ if (Input.mouseScrollDelta.y < 0 && scroll < 110)
     scroll += scrollAmount * Time.deltaTime;</code>
                     </pre>
                     <h4 class="major">Jump mechanic</h4>
-                    <p>Voor de jump mechanic hadden wij als de player op de grond is dat hij dan kan springen. Dat is ons gelukt door middel van de scrollwheel drukken als input te gebruiken en een overlap circle te gebruiken. Hieronder kan je de jump code zien:</p>
+                    <p>Voor de jump mechanic hadden wij als de player op de grond is dat hij dan kan springen. Dat is
+                        ons gelukt door middel van de scrollwheel drukken als input te gebruiken en een overlap circle
+                        te gebruiken. Hieronder kan je de jump code zien:</p>
                     <pre>
 <code>if (isGrounded && Input.GetMouseButton(2))
     {
@@ -104,6 +108,8 @@ if (Input.mouseScrollDelta.y < 0 && scroll < 110)
     }    
 </code>
                     </pre>
+                    <h3 class="major">GitHub repository</h3>
+					<a href="https://github.com/Zakaria-ElGhoul/GD3B-Game-Jam" class="button primary">Go to github</a>
                 </div>
             </div>
         </section>
