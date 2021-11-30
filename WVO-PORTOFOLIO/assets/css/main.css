@@ -99,8 +99,8 @@ input, select, textarea {
 }
 .arrowbox span{
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	border-bottom: 1px solid #fff;
 	border-right: 1px solid #fff;
 	transform: rotate(45deg);
@@ -110,15 +110,15 @@ input, select, textarea {
 
 .arrowbox span:nth-child(0)
 {
-	animation-delay: 0.1s;
+	animation-delay: 0s;
 }
 .arrowbox span:nth-child(1)
 {
-	animation-delay: 0.15s;
+	animation-delay: 0.2s;
 }
 .arrowbox span:nth-child(2)
 {
-	animation-delay: 0.175s;
+	animation-delay: 0.1s;
 }
 
 @keyframes animate {
